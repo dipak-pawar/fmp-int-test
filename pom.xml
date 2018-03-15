@@ -28,7 +28,22 @@
 
   <name>Spring Boot - HTTP Booster</name>
   <description>Spring Boot - HTTP Booster</description>
+    
+  <properties>
+    <arquillian-cube.version>1.15.3-SNAPSHOT</arquillian-cube.version>
+  </properties>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.arquillian.cube</groupId>
+        <artifactId>arquillian-cube-bom</artifactId>
+        <version>${arquillian-cube.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   
 
   <dependencies>

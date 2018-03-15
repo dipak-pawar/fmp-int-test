@@ -35,6 +35,7 @@ public class OpenShiftIT extends AbstractBoosterApplicationTest {
 
     @Before
     public void setup() throws Exception {
+        System.out.println("Hello");
         RestAssured.baseURI = baseURL + "api/greeting";
     }
 

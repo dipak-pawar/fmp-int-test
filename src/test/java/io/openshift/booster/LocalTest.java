@@ -36,6 +36,7 @@ public class LocalTest extends AbstractBoosterApplicationTest {
 
     @Before
     public void beforeTest() {
+        System.out.println(System.getenv("JAVA_HOME"));
         RestAssured.baseURI = String.format("http://localhost:%d/api/greeting", port);
     }
 
